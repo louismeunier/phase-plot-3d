@@ -1,0 +1,169 @@
+body {
+	margin: 0;
+	/* background-color: #000; */
+	background-color: #eae2d7;
+	color: gray;
+	font-family: Monospace;
+	font-size: 13px;
+	line-height: 24px;
+	overscroll-behavior: none;
+}
+
+h1 {
+	text-align: center;
+	font-size: 1.8em;
+}
+
+a {
+	color: #a29eff
+}
+
+a:visited {
+	color: #a29eff
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a, button, input, select {
+	pointer-events: auto;
+}
+
+.primary-panel {
+	position:absolute;
+	outline: 2px dashed gray;
+	display: grid;
+	gap: 1em;
+	padding: 1em;
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
+#control-panel {    
+    bottom: 0;
+	width: 25vw;
+	font-size: 0.8em;
+	display: flex;
+	flex-direction: column;
+	/* align-items: center; */
+	/* justify-content: stretch; */
+	align-items: center;
+}
+
+#options-panel {
+	bottom: 0;
+	right: 0;
+	max-width: 25vw;
+	height: 50vh;
+	overflow-y: scroll;
+}
+
+.info-label {
+	text-decoration: 1.5px dashed underline;
+	transition: 0.25s ease-in-out;
+}
+
+button {
+	border: 2px solid gray;
+	border-radius: 0.5em;
+	color: gray;
+	width: fit-content;
+	/* height: 2em; */
+	display: grid;
+	place-items: center;
+	padding: 0.25em;
+	font-size: 1.2em;
+}
+
+#draw-trajectory {
+	height: 3em;
+	width: 12em;
+	font-size: 1.2em;
+}
+
+.sub-panel {
+	display: grid;
+	/* justify-content: space-between; */
+	grid-template-columns: 1fr 0.5fr;
+	width: 100%;
+	text-align: center;
+	/* gap: 1em; */
+}
+
+.sub-panel-title {
+	text-decoration: underline;
+	font-size: 1.3em;
+}
+
+.sub-div {
+	width: 100%;
+	color: transparent;
+	border-bottom: dashed 2px gray
+}
+
+.parameters-panel {
+	width: 100%;
+}
+
+.together {
+	display: flex;
+	justify-content: center;
+	gap: 1em;
+}
+
+.square-map-container {
+	top: 0;
+	right: 0;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#square-map {
+	border: 1px dashed #808080;
+	background-color: #b3c3cf;
+	opacity: 0.7;
+	height: 15vw;
+	width: 15vw;
+	margin-top: 1em;
+	margin-right: 1em;
+}
+
+input[type="range"] {
+	margin-inline: 2em;
+}
+
+input[type="number"] {
+	width: 20%;
+	height: min-content;
+	border-radius: 0.5em;
+	border: 2px solid gray;
+	margin-inline: .5em;
+}
+
+input[type="checkbox"] {
+	height: 50%;
+}
+
+
+/* .ivp {
+	display: flex;
+	width: 100%;
+} */
+
+.description {
+	word-wrap: break-word;
+}
+#status-panel {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+
+.control {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}

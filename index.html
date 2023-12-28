@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>3D Phase Plane</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link type="text/css" rel="stylesheet" href="main.css">
+	</head>
+	<body>
+			<script type="module" src="/main.ts"></script>
+			<div class="control">
+				<div>
+					<span>x bounds</span>
+					<input type="range" min="-100" max="100" step="1" id="xmin" value="-25">
+					<input type="range" min="-100" max="100" step="1" id="xmax" value="25">
+				</div>
+				<div>
+					<span>y bounds</span>
+					<input type="range" min="-100" max="100" step="1" id="ymin" value="-25">
+					<input type="range" min="-100" max="100" step="1" id="ymax" value="25">
+				</div>
+				<div>
+					<span>z bounds</span>
+					<input type="range" min="-100" max="100" step="1" id="zmin" value="0">
+					<input type="range" min="-100" max="100" step="1" id="zmax" value="25">
+				</div>
+				<button id="show-phase" name="show-phase">Toggle Vector Field</button>
+				<select id="system" value="lorenz">
+					<option value="lorenz">Lorenz</option>
+					<option value="rossler">Rossler</option>
+					<!-- <option value="linear">Linear</option> -->
+				</select>
+				<button id="draw-trajectory">Draw Trajectory</button>
+			</div>
+	</body>
+	<script>
+		MathJax = {
+		  tex: {
+			inlineMath: [['$', '$'], ['\\(', '\\)']]
+		  }
+		};
+	</script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+	</script>
+</html>
